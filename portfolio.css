@@ -1,0 +1,706 @@
+
+/* --------------------- font ------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  'Roboto', sans-serif ;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 4.5rem;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+}
+
+ul{
+    list-style: none;
+}
+
+.btn{
+    padding:1.2rem 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin: 0.5rem;
+    border-radius: 0.3rem;
+}
+
+
+body{
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.95),
+    rgba(0, 0, 0, 0.95)) , url(./image/18410.jpg); */
+    background:#00080a;
+    height: 100vh;
+    background-attachment: fixed;
+    width: 100%;
+    background-position: center;   
+    background-size: cover; 
+}
+
+/* ------------------------- hero section-----------------------------  */
+
+.hero-section{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)) , url(./image/bg7.jpg);
+    background-position: center;   
+    background-size: cover; 
+    height: 100vh;
+    margin-bottom: 5rem;
+}
+ 
+.container{
+    max-width: 126rem;
+    margin: 0 auto;
+    padding: 1rem 3rem;
+}
+
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    height: 5rem;
+    width: 5rem;
+}
+
+.close-icon i{
+    position: absolute;
+    color: #fff;
+    top: 2rem;
+    right: 2rem;
+    font-size: 3rem;
+}
+
+.nav-list{
+    height: 60vh;
+    padding-top: 2rem;
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 10;
+    background-color: #CEB30C;
+    transition: top 1s ease; 
+}
+
+
+.nav-list li{
+    font-size: 2rem;
+}
+
+.open-icon{
+    color: #fff;
+    font-size: 4rem;
+}
+
+.nav-list li a:hover{
+    color: #202020;
+    transition: 0.3s ease;
+}
+
+.hero-content{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.hero-content h1{
+    font-size: 4rem;
+}
+
+.hero-content-title{
+    color: #CEB30C;
+    font-size: 3.5rem;
+    margin: 1.4rem 0;
+}
+
+.hero-content p{
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.btn-primary{
+    background-color: #CEB30C;
+    color: #fff;
+    opacity: 0.85;
+}
+
+.btn-secondary{
+    background-color: #fff;
+    color: #CEB30C;
+    opacity: 0.85;
+}
+
+.btn-primary:hover,.btn-secondary:hover{
+    transition: 0.3s ease-in-out;
+    opacity: 1;
+}
+
+/* ------------------------------- about section -------------------  */
+
+.about-me{
+    margin-bottom: 5rem;
+    position: relative;
+}
+
+
+.header{
+   color: #fff;
+   opacity: 0.3;
+   font-size: 10.5rem;
+   font-family: 'Roboto', sans-serif;
+   font-weight: bold;
+}
+
+.about-title{
+    position: absolute;
+    top: 4.5rem;
+    left: 5rem;
+    font-size: 3rem;
+    font-weight: normal;
+    margin-bottom: 3rem;
+    color: #fff;
+    opacity: 0.85;
+}
+
+.title-group{
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    transform: translateX(-50%);
+}
+
+.about-subcontent{
+    color: #fff;
+    opacity: 0.85;
+    margin-top: 14rem;
+}
+
+.profile-image{
+    background-position: center;
+    width: 100%;
+}
+
+
+.about-subcontent p{
+    font-size: 1.8rem;
+    line-height: 3rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    margin-top: 2rem;
+}
+
+.social h4{
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    color: #CEB30C;
+    font-size: 2rem;
+    padding: 1.6rem 0;
+}
+
+.social-logo{
+    margin-bottom: 4rem;
+}
+
+.icon{
+    color: #fff;
+    font-size: 2.5rem;
+    background-color: #CEB30C;
+    padding:0.6rem 0.9rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.icon:hover{
+    color: #CEB30C;
+    background-color: #ffffff14;
+    transition: 0.3s ease;
+}
+
+/* ------------------------------------ skill section -------------------------  */
+
+.skill-section{
+    margin-bottom: 5rem;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;  
+}
+
+.skill-title{
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: lighter;
+}
+
+.skill-subcontent{
+    display: flex;
+    justify-content: space-between;
+    font-weight: lighter;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.outer-bar{
+    background-color: #ffffff14;
+    height: 0.6rem;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.inner-bar{
+    background-color: #CEB30C;
+    height: 0.6rem;  
+}
+
+.html{
+    width: 80%;
+}
+
+.css{
+    width: 60%;
+}
+
+.design{
+    width: 67%;
+}
+
+.skill-img{
+    background-position: center;
+    width: 100%;
+    display: none;
+}
+
+
+
+/* -------------------------- work and project ---------------------------  */
+
+.work-project{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+.work-container{
+    background-color: #fff;
+    padding-bottom: 10rem;
+}
+
+.work-header{
+    font-size: 7.1rem;
+}
+
+#work-content{
+    padding-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top: 4rem;
+    left: 8.8rem;
+}
+
+.content-group{
+    padding-bottom: 20rem;
+}
+
+.work-list{
+    /* background-color: red; */
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 3;
+}
+
+.margin{
+    margin-top: -15rem;
+}
+
+.card{
+    height: 40rem;
+    width: 33rem;
+    position: relative;
+    margin-bottom: 4rem;
+    /* box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2); */
+    box-shadow: 5px 8px 11px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    filter: grayscale(100%);
+}
+
+.card-content{
+    display: flex ;
+    align-items: center;
+    justify-content: space-between;
+    color: #CEB30C;
+    margin-bottom: 2rem;
+    width: 100%;
+    position: absolute;
+    top: 80%;
+    padding: 0 3rem;
+    z-index: 1;
+    visibility: hidden;
+}
+
+.card:hover .card-content{
+    transition: .5s ease;
+    visibility: visible;
+}
+
+.card-link {
+    font-size:4rem;
+    color: #CEB30C
+}
+
+.card-subcontent h2{
+    color: #fff;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card-subcontent p{
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 0.3rem;
+    font-weight: bold;
+}
+
+.top-overlay , .bottom-overlay{
+    position: absolute;
+    background: linear-gradient(rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.6));
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+}
+
+.card:hover .top-overlay{
+    height: 50%;
+}
+
+.top-overlay{
+    top: 0;
+}
+
+.bottom-overlay{
+  bottom: 0;
+}
+
+.card:hover .bottom-overlay{
+    height: 50%;
+}
+
+.suscribe-block{
+    margin-top: -8rem !important;
+    padding: 3rem 0;
+    /* margin-top: 20rem !important;  */
+    background: linear-gradient( rgba(206, 179, 12 ,0.85), rgba(206, 179, 12 ,0.85)) , url(./image/work2.jpg);
+    background-position: center;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    border-radius: .5rem;
+    z-index: 10;
+    overflow: hidden;
+    position: relative;
+}
+
+.suscribe-block h2{
+    font-size: 2rem;
+    /* padding-top: 4rem; */
+    margin-bottom: 0.8rem;
+}
+
+.suscribe-block p{
+    font-size: 1.6rem;
+    font-weight: normal;
+}
+
+
+.input-mail{
+    padding: 1.4rem 1.6rem;
+    background-color: #fff;
+    border: none;
+    width: 60%;
+    max-width: 28rem;
+    outline-style: none;
+    margin-top: 1.6rem;
+    border-radius: 0.3rem;
+}
+
+.input-mail::placeholder{
+    color: rgba(0,0,0,.4);
+    font-size: 1.6rem; 
+}
+
+.input-mail[type=email]{
+    color: rgba(0,0,0,.4);
+    font-size: 1.6rem;
+}
+
+.btn-suscribe{
+    padding: 1.4rem 1.6rem;
+    background-color: #9d8909;
+    color: #fff;
+    max-width: 19rem;
+    width: 30%;
+    font-size: 1.6rem;
+    font-weight: normal;
+    transition: 0.3s ease;
+    border-radius: 0.3rem;
+    
+}
+
+.btn-suscribe:hover{
+    background-color: #202020;
+    color: #fff;
+}
+
+/* ----------------------------------------------- footer  --------------------------  */
+
+
+.main-footer{
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+
+.footer-content{
+    margin-bottom: 4rem;
+    max-width: 36rem;
+}
+
+.footer-content p{
+    font-family:  'Roboto', sans-serif ;
+    font-size: 2rem;
+    color: #fff;
+    padding: 2rem 0;
+    line-height: 3rem;
+}
+
+
+.footer-list{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-weight: lighter;
+    font-family:  'Roboto', sans-serif ;
+    font-size: 1.6rem;
+    margin-bottom: 4rem;
+}
+
+.footer-list ul{
+    width: 50%;
+}
+
+.footer-list ul li{
+    margin-bottom: 1rem;
+}
+
+.footer-list-header{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: normal;
+}
+
+.contact-us{
+    color: #fff;
+    font-size: 2rem;
+    max-width: 36rem;
+}
+
+.contact-us p{
+    margin-bottom: 2rem;
+}
+
+.contact-list{
+    margin-top: 1rem;
+    font-weight: lighter;
+    font-size: 1.6rem;
+}
+
+.contact-list li{
+    margin-bottom: 1rem;
+    line-height: 2.5rem;
+}
+
+.contact-list li i{
+    color: #CEB30C;
+    margin-right: 0.5rem;
+}
+
+
+@media(min-width : 768px) {
+
+    
+    .work-list {
+        width: 100%;
+        flex-direction: row;
+        
+    }
+
+    .card{
+        width: 23rem;
+        height: 30rem;
+    }
+
+    .margintop{
+        margin-top: -15rem;
+    }
+
+    .card-content{
+        padding: 0 2rem
+    }
+
+    .card-content h2{
+        font-size: 1.4rem;
+    }
+
+    .card-link{
+        font-size: 3rem;
+    }
+
+
+}
+
+@media(min-width : 1024px) {
+
+    .open-icon{
+        display: none;
+    }
+
+    .nav-list{
+        display: flex;
+        flex-direction: row;
+        background: none;
+        height: 5rem;
+        position: static;
+        justify-content: space-between;
+        top: 0%;
+        color: #fff;
+        padding-top: 0;
+        width:60%
+    }
+
+    .nav-list li a:hover{
+        color: #CEB30C;
+    }
+
+    .close-icon{
+        display: none;
+    }
+
+    .hero-content h1{
+        font-size: 6rem;
+    }
+
+    .hero-content-title{
+        font-size: 4.5rem;
+    }
+
+    .hero-content p{
+        font-size: 3rem;
+    }
+
+   .about-subcontent{
+        margin-top: 20rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .profile-information{
+        width: 50%;
+    }
+
+    .profile-image{
+        width: 40%;
+    }
+
+    .work-header{
+        font-size: 9rem;
+    }
+
+    #work-content{
+        font-size: 2.5rem;
+        top: 5rem;
+        left: 10rem;
+    }
+
+    .skill-title{
+        font-size: 5rem;
+    }
+
+    .skill-img{
+        display: inline-block;
+        width: 40%;
+    }
+
+    .skill-content{
+        padding-top: 3rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .skill-list{
+        width: 50%;
+    }
+
+    .card{
+        width: 30rem;
+        height: 40rem;
+    }
+
+ 
+    .card-content h2{
+        font-size: 2.4rem;
+    }
+
+    .card-link{
+        font-size: 4rem;
+    }
+
+    .main-footer{
+        padding-top: 10rem;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .footer-content{
+        width: 30%;
+    }
+
+    .footer-list{
+        width: 30%;
+    }
+
+    .contact-us{
+        width: 40%;
+    }
+}
